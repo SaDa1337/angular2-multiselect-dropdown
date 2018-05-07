@@ -34,7 +34,7 @@
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp",
     "prepublishOnly": "npm run ci",
-	"prepublish": "npm run build",
+	"postinstall": "npm run build",
     "preversion": "npm run ci",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
